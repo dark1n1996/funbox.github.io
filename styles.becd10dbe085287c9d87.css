@@ -382,50 +382,29 @@ ul {
 
 @font-face {
     src: url(./vendor/Exo2.0-Thin.otf) format('opentype');
-    font-family: 'Exo';
-  }
+    font-family: 'Exo2.0';
+}
+
+@font-face {
+  src: url(./vendor/TrebuchetMS-Bold.ttf) format('truetype');
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
+}
+
+@font-face {
+  src: url(./vendor/TrebuchetMS.ttf) format('truetype');
+  font-family: 'Trebuchet MS';
+  font-weight: normal;
+}
 
 .page {
     background-image: url(./images/Pattern.png);
     width: 100%;
     min-height: 612px;
-    font-family: "Exo";
+    font-family: "Trebuchet MS";
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.card__layer {
-    width: 317px;
-    height: 481px;
-    position: absolute;
-    top: -5x;
-    left: -5px;
-    overflow: hidden;
-    clip-path: polygon(13.5% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8.9%);
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-color: transparent;
-    z-index: 100;
-}
-
-.card__layer::before {
-    content: '';
-    position: absolute;
-    width: 1100%; height: 1100%;
-    top: 20px; right: -500%;
-    background: transparent;
-    transform-origin: 46% 0;
-    transform: rotate(-45deg);
-    z-index: -1;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent;
-
 }
 
 .card__image {
@@ -449,7 +428,8 @@ ul {
     font-size: 16px;
     color: #666;
     margin-top: 20px;
-    width: 207px;
+    width: 205px;
+    font-weight: normal;
 }
 .card_selected {
     border-color: #D91667;
@@ -480,6 +460,34 @@ ul {
     border-style: solid;
 }
 
+.card_failed {
+    border-color: grey;
+    width: 317px;
+    height: 481px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(13.5% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8.9%);
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_failed::before {
+    border-color: gray; 
+    content: '';
+    position: absolute;
+    width: 1100%; height: 1100%;
+    top: 20px; right: -500%;
+    background: white;
+    transform-origin: 46% 0;
+    transform: rotate(-45deg);
+    z-index: -1;
+    border-width: 5px;
+    border-style: solid;
+}
 .card {
     width: 317px;
     height: 481px;
@@ -514,6 +522,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .cards__span {
     color: #1698D9;
@@ -535,6 +544,44 @@ ul {
     color: white;
     font-size: 13px;
     margin-top: 16px;
+}
+.cards__fail_unactive {
+    display: none;
+}
+.cards__fail {
+    color: #FFFF66;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 16px;
+}
+.cards__layer {
+    width: 317px;
+    height: 481px;
+    position: absolute;
+    clip-path: polygon(13.5% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8.9%);
+    border-radius: 10px;
+    overflow: hidden;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    cursor: pointer;
+    z-index: 100;
+    background-color: white;
+    opacity: 0;
+}
+
+.cards__layer::before {
+    content: '';
+    position: absolute;
+    width: 1100%; height: 1100%;
+    top: 20px; right: -500%;
+    background: white;
+    transform-origin: 46% 0;
+    transform: rotate(-45deg);
+    z-index: -1;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
 }
 .cards {
     display: grid;
@@ -561,19 +608,19 @@ ul {
     margin: 0px auto 23px auto;
     color: #FFFFFF;
     margin-top: 47px;
+    font-family: 'Exo2.0';
 }
 .circle_blue {
    background-color: #1698D9; 
 }
 .circle_green {
-    background-color: green; 
+    background-color: gray; 
  }
 .circle_red {
     background-color: #D91667; 
  }
 .circle__weight {
     font-size: 42px;
-    font-weight: bolder;
 }
 .circle__kg {
     font-size: 22px;
@@ -590,6 +637,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-weight: 100;
 }
 .list {
     width: 207px;
@@ -597,5 +645,8 @@ ul {
     margin-left: 0;
     padding-left: 0;
     margin-top: 16px;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
 }
 
