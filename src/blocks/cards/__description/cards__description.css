@@ -1,0 +1,7 @@
+@import url('./_unactive/cards__description_unactive.css');
+
+.cards__description {
+    color: white;
+    font-size: 13px;
+    margin-top: 16px;
+}

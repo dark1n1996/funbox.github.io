@@ -1,0 +1,28 @@
+.card_selected {
+    border-color: #D91667;
+    width: 317px;
+    height: 481px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(13.5% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8.9%);
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_selected::before {
+    border-color: #D91667; 
+    content: '';
+    position: absolute;
+    width: 1100%; height: 1100%;
+    top: 20px; right: -500%;
+    background: white;
+    transform-origin: 46% 0;
+    transform: rotate(-45deg);
+    z-index: -1;
+    border-width: 5px;
+    border-style: solid;
+}

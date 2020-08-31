@@ -1,0 +1,20 @@
+@import url('./_blue/circle_blue.css');
+@import url('./_green/circle_green.css');
+@import url('./_red/circle_red.css');
+@import url('./__weight/circle__weight.css');
+@import url('./__kg/circle__kg.css');
+
+.circle {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    right: 16px;
+    bottom: 17px;
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: 100;
+}

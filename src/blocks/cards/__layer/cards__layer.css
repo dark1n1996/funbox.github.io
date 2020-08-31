@@ -1,0 +1,29 @@
+.cards__layer {
+    width: 317px;
+    height: 481px;
+    position: absolute;
+    clip-path: polygon(13.5% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8.9%);
+    border-radius: 10px;
+    overflow: hidden;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    cursor: pointer;
+    z-index: 100;
+    background-color: white;
+    opacity: 0;
+}
+
+.cards__layer::before {
+    content: '';
+    position: absolute;
+    width: 1100%; height: 1100%;
+    top: 20px; right: -500%;
+    background: white;
+    transform-origin: 46% 0;
+    transform: rotate(-45deg);
+    z-index: -1;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+}

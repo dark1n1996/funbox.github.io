@@ -1,0 +1,7 @@
+@import url('./_unactive/cards__buy_unactive.css');
+
+.cards__buy {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 13px;
+}
