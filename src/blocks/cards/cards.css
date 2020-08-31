@@ -1,0 +1,26 @@
+@import url('./__container/cards__container.css');
+@import url('./__span/cards__span.css');
+@import url('./__buy/cards__buy.css');
+@import url('./__description/cards__description.css');
+@import url('./__fail/cards__fail.css');
+@import url('./__layer/cards__layer.css');
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 321px);
+    grid-gap: 59px;    
+    justify-content: center;
+    margin-bottom: 47px;
+}
+
+@media screen and (max-width: 1100px) {
+    .cards{
+        grid-template-columns: repeat(2, 321px);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cards{
+        grid-template-columns: repeat(1, 321px);
+    }
+}

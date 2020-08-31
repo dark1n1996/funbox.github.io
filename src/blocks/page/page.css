@@ -1,0 +1,26 @@
+@font-face {
+    src: url('../../vendor/fonts/Exo2.0-Thin.otf') format('opentype');
+    font-family: 'Exo2.0';
+}
+
+@font-face {
+  src: url('../../vendor/fonts/TrebuchetMS-Bold.ttf') format('truetype');
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
+}
+
+@font-face {
+  src: url('../../vendor/fonts/TrebuchetMS.ttf') format('truetype');
+  font-family: 'Trebuchet MS';
+  font-weight: normal;
+}
+
+.page {
+    background-image: url('../../images/Pattern.png');
+    width: 100%;
+    min-height: 612px;
+    font-family: "Trebuchet MS";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,5 @@
+.cards__span {
+    color: #1698D9;
+    border-bottom: 1px dashed #1698D9;;
+    cursor: pointer;
+}

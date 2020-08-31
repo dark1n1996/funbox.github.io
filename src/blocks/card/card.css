@@ -1,0 +1,36 @@
+@import url('./__image/card__image.css');
+@import url('./__feed/card__feed.css');
+@import url('./__filling/card__filling.css');
+@import url('./__name/card__name.css');
+@import url('./_selected/card_selected.css');
+@import url('./_failed/card_failed.css');
+
+.card {
+    width: 317px;
+    height: 481px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(13.5% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8.9%);
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: #1698D9;
+    cursor: pointer;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 1100%; height: 1100%;
+    top: 20px; right: -500%;
+    background: white;
+    transform-origin: 46% 0;
+    transform: rotate(-45deg);
+    z-index: -1;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1698D9;
+}
