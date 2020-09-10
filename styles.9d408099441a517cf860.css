@@ -424,6 +424,10 @@ ul {
     font-weight: bold;
     width: 207px;
 }
+.card__name.card__name_hover {
+    display: none;
+    color: #D91667;
+}
 .card__name {
     font-size: 16px;
     color: #666;
@@ -433,7 +437,7 @@ ul {
 }
 .card_selected {
     border-color: #D91667;
-    width: 317px;
+    width: 315px;
     height: 481px;
     position: relative;
     overflow: hidden;
@@ -460,9 +464,10 @@ ul {
     border-style: solid;
 }
 
+
 .card_failed {
     border-color: grey;
-    width: 317px;
+    width: 315px;
     height: 481px;
     position: relative;
     overflow: hidden;
@@ -488,8 +493,10 @@ ul {
     border-width: 5px;
     border-style: solid;
 }
+
+
 .card {
-    width: 317px;
+    width: 315px;
     height: 481px;
     position: relative;
     overflow: hidden;
@@ -517,6 +524,7 @@ ul {
     border-style: solid;
     border-color: #1698D9;
 }
+
 
 .cards__container {
     display: flex;
@@ -555,7 +563,7 @@ ul {
     margin-top: 16px;
 }
 .cards__layer {
-    width: 317px;
+    width: 315px;
     height: 481px;
     position: absolute;
     clip-path: polygon(13.5% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8.9%);
@@ -583,6 +591,8 @@ ul {
     border-style: solid;
     border-color: transparent;
 }
+
+
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 321px);
@@ -609,6 +619,7 @@ ul {
     color: #FFFFFF;
     margin-top: 47px;
     font-family: 'Exo2.0';
+    text-align: center;
 }
 .circle_blue {
    background-color: #1698D9; 
