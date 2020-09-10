@@ -10,9 +10,13 @@ const cardActionObj = new CardAction(VARIABLE);
 
 cardObj.renderCards(DATA);
 
-document.addEventListener('mouseout', cardActionObj.pointer);
+document.addEventListener('mouseout', cardActionObj.point);
 
-document.addEventListener('mouseover', cardActionObj.pointer);
+document.addEventListener('mouseover', cardActionObj.point);
+
+document.addEventListener('mouseover', cardActionObj.pointOnSelectedCard);
+
+document.addEventListener('mouseout', cardActionObj.pointNotOnSelectedCard);
 
 document.addEventListener('click', cardActionObj.switchCard);
 

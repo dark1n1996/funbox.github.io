@@ -8,7 +8,8 @@ export default class Card {
         }
         const card = ` <div class="cards__container">
         <div class="card item" name="${data.quantity}">
-            <h3 class="card__name">Сказочное заморское яство</h3>
+            <h3 class="card__name card__name_selected">${data.fairyOverseasFood}</h3>
+            <h3 class="card__name card__name_hover">${data.catNotAgree}</h3>
             <h2 class="card__feed">Нямушка</h2>
             <h4 class="card__filling">${data.filling}</h4>
             <ul class="list">

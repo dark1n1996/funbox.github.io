@@ -7,6 +7,8 @@ const DATA = [
         weight: '0,5',
         food: 'Печень утки разварная с артишоками.',
         quantity: Math.random(),
+        fairyOverseasFood: 'Сказочное заморское яство',
+        catNotAgree: 'Котэ не одобряет?',
     },
     {
         id: '2',
@@ -16,6 +18,8 @@ const DATA = [
         weight: '2',
         food: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
         quantity: Math.random(),
+        fairyOverseasFood: 'Сказочное заморское яство',
+        catNotAgree: 'Котэ не одобряет?',
     },
     {
         id: '3',
@@ -26,6 +30,8 @@ const DATA = [
         weight: '5',
         food: 'Филе из цыплят с трюфелями в бульоне.',
         quantity: Math.random(),
+        fairyOverseasFood: 'Сказочное заморское яство',
+        catNotAgree: 'Котэ не одобряет?',
     }
 ]
 
