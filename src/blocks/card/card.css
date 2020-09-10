@@ -6,7 +6,7 @@
 @import url('./_failed/card_failed.css');
 
 .card {
-    width: 317px;
+    width: 315px;
     height: 481px;
     position: relative;
     overflow: hidden;
@@ -34,3 +34,4 @@
     border-style: solid;
     border-color: #1698D9;
 }
+
