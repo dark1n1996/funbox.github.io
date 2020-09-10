@@ -1,5 +1,5 @@
 .cards__layer {
-    width: 317px;
+    width: 315px;
     height: 481px;
     position: absolute;
     clip-path: polygon(13.5% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8.9%);
@@ -27,3 +27,4 @@
     border-style: solid;
     border-color: transparent;
 }
+

@@ -1,6 +1,6 @@
 .card_selected {
     border-color: #D91667;
-    width: 317px;
+    width: 315px;
     height: 481px;
     position: relative;
     overflow: hidden;
@@ -26,3 +26,4 @@
     border-width: 5px;
     border-style: solid;
 }
+
