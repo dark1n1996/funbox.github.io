@@ -31,6 +31,8 @@ export default class CardAction {
                 container.querySelector('.item').querySelector('.circle').classList.toggle('circle_red');
                 container.querySelector('.cards__buy').classList.toggle('cards__buy_unactive');
                 container.querySelector('.cards__description').classList.toggle('cards__description_unactive');
+                container.querySelector('.card__name_selected').setAttribute('style', 'display: block;');
+                container.querySelector('.card__name_hover').setAttribute('style', 'display: none;');
                 this.variable = 'Selected';
             } 
             if(container.querySelector('.card_selected')) {
@@ -46,12 +48,25 @@ export default class CardAction {
             }
         }
     }
-    pointer(event) {
+    point(event) {
         let container = event.target.closest('.cards__container');
         if(container && container.querySelector('.card_selected')) {
             container.querySelector('.cards__layer').setAttribute('style', 'cursor: pointer;');
             this.variable = 'Unselected';
         } 
     }
-
+    pointOnSelectedCard(event) {
+        let container = event.target.closest('.cards__container');
+        if(container && container.querySelector('.card_selected')) {
+            container.querySelector('.card__name_selected').setAttribute('style', 'display: none;');
+            container.querySelector('.card__name_hover').setAttribute('style', 'display: block;');
+        }    
+    }
+    pointNotOnSelectedCard(event) {
+        let container = event.target.closest('.cards__container');
+        if(container && container.querySelector('.card_selected')) {
+            container.querySelector('.card__name_selected').setAttribute('style', 'display: block;');
+            container.querySelector('.card__name_hover').setAttribute('style', 'display: none;');
+        } 
+    }
 }
